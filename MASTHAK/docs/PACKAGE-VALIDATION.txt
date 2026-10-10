@@ -1,0 +1,17 @@
+MASTHAK PACKAGE VERIFICATION - 10 OCTOBER 2026
+
+Current release: Beginning > Arcade > Story books > Material lab > Characters.
+Sound defaults on with browser autoplay fallback; chapter previews auto-advance.
+The setup README and Windows launcher are included.
+
+A fresh ZIP extraction installed the locked dependencies using:
+  npm ci --offline --ignore-scripts
+The extracted project passed npm run build, including TypeScript and all routes.
+No node_modules, Next.js build cache or Godot import cache was in the archive.
+Packaging checks ZIP CRC integrity, required source/art/audio/game files,
+and produces a SHA-256 checksum. Documentation preview screenshots are omitted.
+
+Godot game source and exported games are unchanged from the previously tested
+engine. Historical game import, rules/input and scene checks are documented in
+docs/godot/README.md. This packaging check does not claim full campaign testing
+or all-hardware certification. License notices are in ASSET-LICENSES.md.

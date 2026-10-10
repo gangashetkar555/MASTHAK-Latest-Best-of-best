@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env*.local
+
+.tools/
+reference/video/
+
+godot/.godot/
+builds/
+release/
+*.blend1

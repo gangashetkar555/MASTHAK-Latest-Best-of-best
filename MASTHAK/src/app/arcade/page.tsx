@@ -1,0 +1,4 @@
+import Link from 'next/link';
+import {ArrowUpRight} from 'lucide-react';
+import {modes} from '@/data/content';
+export default function Arcade(){return <div className="page page-enter"><div className="page-title"><div className="eyebrow">LESS LANDFILL. MORE PLAY.</div><h1>Play your <em>part.</em></h1><p>Four ways to put the story into action. Quick hands, thoughtful choices, and a better ending for every material.</p></div><div className="arcade-grid">{modes.map((m,i)=><Link className="mode-card" key={m.id} href={`/arcade/${m.id}`} style={{background:m.color}}><span className="mode-icon">{m.icon}</span><div className="eyebrow">0{i+1} / {m.tag}</div><h2>{m.name}</h2><p>{m.description}</p><span className="card-link">Let’s play <ArrowUpRight size={20}/></span></Link>)}</div><p className="game-help">Compost organics. Recycle clean accepted materials. Keep residual waste separate. Batteries always need special collection. Local collection rules may vary.</p></div>}
